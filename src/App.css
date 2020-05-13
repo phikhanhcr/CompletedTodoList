@@ -1,12 +1,63 @@
 .App {
-  text-align: center;
+  margin:120px 0 0 40% ;
+  width: 400px;
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.App .Input {
+  display: flex;
+  align-items: center;
+}
+.App .Input img {
+  width: 40px;
+  height: 40px;
+}
+.App .Input input {
+  margin-left: 20px;
+  /* border: none; */
+  font-size: 18px;
+  font-style: italic;
+  width:100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.App .Input input:focus {
+  outline: none;
+}
+.TodoItem {
+  margin-top: 5px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color : #4d4d4d;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+.TodoItem img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  
+}
+.TodoItem p {
+  flex-grow: 1;
+}
+.TodoItemHidden {
+  display: none;
+}
+.TodoItem-completed {
+  text-decoration: line-through;
+  opacity: 60%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
